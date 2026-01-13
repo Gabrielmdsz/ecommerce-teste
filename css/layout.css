@@ -1,0 +1,20 @@
+/* layout.css */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; /* Espaço entre seções */
+}
+
+/* Ajuste para Desktop */
+@media (min-width: 1024px) {
+    main {
+        gap: 5rem;
+    }
+}

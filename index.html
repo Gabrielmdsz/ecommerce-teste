@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    
+    <!-- Base & Layout -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+
+    <!-- Components -->
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/hero.css">
+    <link rel="stylesheet" href="css/components/panel.css">
+    <link rel="stylesheet" href="css/components/product-grid.css">
+    <link rel="stylesheet" href="css/components/product-card.css">
+    <link rel="stylesheet" href="css/components/newsletter.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header-logo">
+                <img src="https://placehold.co/150x40?text=syntaxwear" alt="SyntaxWear Logo">
+            </div>
+
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#">Masculino</a></li>
+                    <li><a href="#">Feminino</a></li>
+                    <li><a href="#">Outlet</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#" class="desktop-only">Nossas lojas</a>
+                <a href="#" class="desktop-only">Sobre</a>
+                <div class="header-icons">
+                    <a href="#" aria-label="Perfil"><img src="https://placehold.co/24?text=U" alt="User"></a>
+                    <a href="#" aria-label="Ajuda"><img src="https://placehold.co/24?text=H" alt="Help"></a>
+                    <a href="#" aria-label="Carrinho"><img src="https://placehold.co/24?text=C" alt="Cart"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg">
+                <img src="https://placehold.co/1920x800?text=Hero+Banner+Man+Sitting" alt="Modelo sentado na escada">
+            </div>
+            <div class="hero-content">
+                <span class="hero-subtitle">Krypton One</span>
+                <h2>Transforme qualquer passo<br>em presença.</h2>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-outline">Ver modelos</a>
+                    <a href="#" class="btn btn-filled">Comprar</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-grid categories-section">
+            <div class="grid-container">
+                <article class="category-card">
+                    <img src="https://placehold.co/400x600/e0e0e0/333?text=Tenis+Branco" alt="Tênis Casual">
+                    <a href="#" class="category-btn">Casual</a>
+                </article>
+                
+                <article class="category-card">
+                    <img src="https://placehold.co/400x600/999999/333?text=Tenis+Cinza" alt="Tênis Esporte">
+                    <a href="#" class="category-btn">Esporte</a>
+                </article>
+
+                <article class="category-card">
+                    <img src="https://placehold.co/400x600/purple/fff?text=Tenis+Colorido" alt="Tênis Moderno">
+                    <a href="#" class="category-btn">Moderno</a>
+                </article>
+
+                <article class="category-card">
+                    <img src="https://placehold.co/400x600/666666/fff?text=Tenis+Futurista" alt="Tênis Futurista">
+                    <a href="#" class="category-btn">Futurista</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="hero secondary-hero">
+            <div class="hero-bg">
+                <img src="https://placehold.co/1920x600?text=Banner+Urbano" alt="Estilo Urbano">
+            </div>
+            <div class="hero-content centered">
+                <span class="hero-subtitle">Krypton One</span>
+                <h2>Estilo urbano com atitude</h2>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-outline">Feminino</a>
+                    <a href="#" class="btn btn-outline">Masculino</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-grid gallery-section">
+            <div class="bento-grid">
+                
+                <article class="gallery-item item-wide">
+                    <img src="https://placehold.co/800x400/d2b48c/333?text=Tenis+Roxo+Verde" alt="Tênis Colorido">
+                </article>
+
+                <article class="gallery-item">
+                    <img src="https://placehold.co/400x300/d2b48c/333?text=Tenis+Preto+Branco" alt="Tênis Preto">
+                </article>
+
+                <article class="gallery-item item-tall">
+                    <img src="https://placehold.co/400x800/d2b48c/333?text=Modelo+Mulher" alt="Modelo Feminina">
+                </article>
+
+                <div class="gallery-column">
+                    <article class="gallery-item">
+                        <img src="https://placehold.co/400x300/d2b48c/333?text=Tenis+Roxo+Pink" alt="Tênis Esportivo">
+                    </article>
+                    <article class="gallery-item">
+                        <img src="https://placehold.co/400x300/d2b48c/333?text=Tenis+Cinza" alt="Tênis Cinza">
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Inscreva-se em nosso e-mail</h2>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="email@email.com" aria-label="Seu e-mail">
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            
+            <div class="footer-social">
+                <h3>Redes sociais</h3>
+                <div class="social-icons">
+                    <a href="#">IG</a>
+                    <a href="#">WA</a>
+                    <a href="#">TK</a>
+                    <a href="#">FB</a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>Masculino</h4>
+                    <ul>
+                        <li><a href="#">Casual</a></li>
+                        <li><a href="#">Esporte</a></li>
+                        <li><a href="#">Moderno</a></li>
+                        <li><a href="#">Futurista</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-column">
+                    <h4>Feminino</h4>
+                    <ul>
+                        <li><a href="#">Casual</a></li>
+                        <li><a href="#">Esporte</a></li>
+                        <li><a href="#">Moderno</a></li>
+                        <li><a href="#">Futurista</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-column">
+                    <h4>Outlet</h4>
+                    <ul>
+                        <li><a href="#">Masculino</a></li>
+                        <li><a href="#">Feminino</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-column">
+                    <h4>Nossas lojas</h4>
+                    <ul>
+                        <li><a href="#">Loja física</a></li>
+                        <li><a href="#">Loja online</a></li>
+                    </ul>
+                </div>
+                 
+                <div class="link-column">
+                    <h4>Sobre</h4>
+                    <ul>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Missão</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright, All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>

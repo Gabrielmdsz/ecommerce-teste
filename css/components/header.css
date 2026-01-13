@@ -1,0 +1,87 @@
+/* header.css */
+.header {
+    background-color: var(--bg-light);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite quebra em telas muito pequenas */
+}
+
+.header-logo img {
+    height: 30px; /* Ajuste conforme placeholder */
+}
+
+/* Navegação Mobile (Simplificada para CSS-only) */
+.header-nav {
+    display: none; /* Escondido no mobile inicialmente, ou use hamburger */
+    width: 100%;
+    order: 3;
+    padding-top: 1rem;
+}
+
+.header-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+/* Ícones e Ações */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.desktop-only {
+    display: none; /* Esconde links extras no mobile */
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.header-icons img {
+    width: 20px;
+    height: 20px;
+    filter: grayscale(100%); /* Ícones cinza */
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .header-nav {
+        display: block;
+        width: auto;
+        order: unset;
+        padding-top: 0;
+    }
+
+    .header-nav ul {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .header-nav a {
+        font-weight: 500;
+        color: #555;
+    }
+
+    .header-nav a:hover {
+        color: var(--primary-color);
+    }
+
+    .desktop-only {
+        display: inline-block;
+        font-size: 0.9rem;
+        color: #777;
+    }
+}

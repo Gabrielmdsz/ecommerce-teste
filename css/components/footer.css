@@ -1,0 +1,69 @@
+/* footer.css */
+.footer {
+    background-color: var(--footer-bg);
+    color: #bbb;
+    padding: 4rem 0 2rem;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.footer h3, .footer h4 {
+    color: white;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+/* Ícones sociais */
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #555;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #444;
+    font-size: 0.8rem;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 2fr repeat(4, 1fr); /* Coluna social maior + 4 menus */
+    }
+    
+    .footer-links {
+        display: contents; /* Faz os filhos diretos participarem do grid principal */
+    }
+}

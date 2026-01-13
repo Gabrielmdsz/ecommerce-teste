@@ -1,0 +1,85 @@
+/* base.css */
+:root {
+    /* Cores da Marca (Baseadas na imagem) */
+    --primary-color: #7b2cbf; /* Roxo vibrante */
+    --accent-color: #b8b8ff;  /* Lilás claro */
+    --text-dark: #1a1a1a;
+    --text-light: #f5f5f5;
+    --bg-light: #ffffff;
+    --bg-gray: #f4f4f4;
+    --footer-bg: #2d2d2d;
+    
+    /* Tipografia */
+    --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    
+    /* Espaçamentos */
+    --container-padding: 1.5rem;
+    --border-radius: 8px;
+    --btn-radius: 50px;
+}
+
+/* Reset "Hard" */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px; /* Base para rem */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+}
+
+/* Utilitários de Texto e Imagem */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Botões Globais */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: var(--btn-radius);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-filled {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    border: 2px solid var(--bg-light);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--bg-light);
+    border: 2px solid var(--bg-light);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
