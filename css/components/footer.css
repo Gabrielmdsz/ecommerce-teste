@@ -1,4 +1,3 @@
-/* footer.css */
 .footer {
     background-color: var(--footer-bg);
     color: #bbb;
@@ -6,7 +5,6 @@
     font-size: 0.9rem;
     margin-top: 3rem;
 }
-
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -16,8 +14,7 @@
 .footer h3, .footer h4 {
     color: white;
     margin-bottom: 1.5rem;
-    text-transform: uppercase;
-    font-size: 0.85rem;
+    font-size: 1rem;
     letter-spacing: 1px;
 }
 
@@ -31,7 +28,6 @@
     color: white;
 }
 
-/* Ícones sociais */
 .social-icons {
     display: flex;
     gap: 1rem;
@@ -40,13 +36,16 @@
 .social-icons a {
     width: 40px;
     height: 40px;
-    border: 1px solid #555;
+    border: 2px solid #fff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-size: 0.8rem;
+}
+.social-icons a i{
+    font-size: 18px;
 }
 
 .footer-bottom {
@@ -56,14 +55,20 @@
     border-top: 1px solid #444;
     font-size: 0.8rem;
 }
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+}
 
-/* Desktop */
-@media (min-width: 768px) {
+
+@media (min-width: 1024px) {
     .footer-grid {
-        grid-template-columns: 2fr repeat(4, 1fr); /* Coluna social maior + 4 menus */
+        grid-template-columns: 250px 1fr; 
+        align-items: start;
     }
     
     .footer-links {
-        display: contents; /* Faz os filhos diretos participarem do grid principal */
+        grid-template-columns: repeat(5, 1fr);
     }
 }

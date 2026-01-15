@@ -1,4 +1,3 @@
-/* layout.css */
 .container {
     width: 100%;
     max-width: 1200px;
@@ -9,10 +8,10 @@
 main {
     display: flex;
     flex-direction: column;
-    gap: 3rem; /* Espaço entre seções */
+    gap: 3rem; 
 }
 
-/* Ajuste para Desktop */
+
 @media (min-width: 1024px) {
     main {
         gap: 5rem;

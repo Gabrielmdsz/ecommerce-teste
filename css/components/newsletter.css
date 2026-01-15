@@ -1,14 +1,14 @@
-/* newsletter.css */
 .newsletter {
-    background-color: #e6cbb3; /* Tom bege da imagem */
+    background-color: #e6cbb3;
     padding: 4rem 1rem;
     text-align: center;
     border-radius: 20px;
-    margin: 0 var(--container-padding); /* Margem lateral no mobile */
+    margin: 0 3%; 
 }
 
 .newsletter h2 {
     font-size: 1.5rem;
+    font-weight: bold;
     margin-bottom: 2rem;
     color: var(--text-dark);
 }
@@ -38,11 +38,14 @@
     border-radius: var(--btn-radius);
     cursor: pointer;
     font-weight: bold;
-    text-transform: uppercase;
+    font-size: 1rem;
 }
 
-/* Desktop */
-@media (min-width: 768px) {
+@media (min-width: 960px) {
+    .newsletter{
+        width: 50%;
+        margin: 0 auto;
+    }
     .newsletter-form {
         flex-direction: row;
         background: white;

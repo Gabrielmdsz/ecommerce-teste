@@ -1,10 +1,12 @@
-/* header.css */
 .header {
     background-color: var(--bg-light);
     padding: 1rem 0;
-    position: sticky;
-    top: 0;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
     z-index: 1000;
+    border-radius: 20px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
@@ -12,16 +14,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Permite quebra em telas muito pequenas */
+    flex-wrap: wrap; 
+    margin: 0;
+    max-width: 100%;
+    padding-right: 3%;
 }
 
 .header-logo img {
-    height: 30px; /* Ajuste conforme placeholder */
+    height: 50px; 
 }
 
-/* Navegação Mobile (Simplificada para CSS-only) */
+
 .header-nav {
-    display: none; /* Escondido no mobile inicialmente, ou use hamburger */
+    display: none; /*  colocar hamburger */
     width: 100%;
     order: 3;
     padding-top: 1rem;
@@ -34,7 +39,6 @@
     text-align: center;
 }
 
-/* Ícones e Ações */
 .header-actions {
     display: flex;
     align-items: center;
@@ -42,7 +46,7 @@
 }
 
 .desktop-only {
-    display: none; /* Esconde links extras no mobile */
+    display: none; 
 }
 
 .header-icons {
@@ -52,11 +56,10 @@
 
 .header-icons img {
     width: 20px;
-    height: 20px;
-    filter: grayscale(100%); /* Ícones cinza */
+    height: 20px; 
 }
 
-/* Desktop */
+
 @media (min-width: 768px) {
     .header-nav {
         display: block;
@@ -69,6 +72,10 @@
         flex-direction: row;
         gap: 2rem;
     }
+    .header-nav ul li{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 
     .header-nav a {
         font-weight: 500;
@@ -80,8 +87,24 @@
     }
 
     .desktop-only {
-        display: inline-block;
-        font-size: 0.9rem;
-        color: #777;
+        display: none;
     }
+    .desktop-only:hover{
+        color: var(--primary-color);
+    }
+    .header-icons{
+        display: flex;
+        gap: 40px;
+    }
+    .header-icons a img{
+        width: 100%;
+    }
+}
+@media (min-width: 1024px){
+    .desktop-only {
+    display: inline-block;
+        font-size: 1.2rem;
+        color: #777;
+        padding-right: 30px;
+}
 }
