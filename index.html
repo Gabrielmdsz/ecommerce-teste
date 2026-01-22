@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Loja de tênis e calçados modernos e estilosos para todas as ocasiões. Encontre o par perfeito para você!">
     <title>E-commerce</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -15,42 +18,65 @@
     <link rel="stylesheet" href="css/components/footer.css">
     <script src="https://kit.fontawesome.com/fa4de506a3.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+
     <header class="header">
-        <div class="container">
-            <div class="header-logo">
-                <img src="/images/logo/Logo.svg" alt="SyntaxWear Logo">
-            </div>
+			<h1 class="logo">
+				<a href="/" title="SyntaxWear - Tênis e Sneakers Online">
+					<img src="./images/logo/logo.svg" alt="SyntaxWear - Tênis e Sneakers Online" />
+				</a>
+			</h1>
 
-            <nav class="header-nav">
-                <ul>
-                    <li><a href="#">Masculino</a></li>
-                    <li><a href="#">Feminino</a></li>
-                    <li><a href="#">Outlet</a></li>
-                </ul>
-            </nav>
+			<input type="checkbox" class="menu-toggle" id="menu-toggle" />
+			<label for="menu-toggle" class="menu-icon">
+				<img src="./images/icons/menu-toggle.svg" alt="menu mobile" srcset="" />
+			</label>
 
-            <div class="header-actions">
-                <a href="#" class="desktop-only">Nossas lojas</a>
-                <a href="#" class="desktop-only">Sobre</a>
-                <div class="header-icons">
-                    <a href="#" aria-label="Perfil"><img src="/images/icons/user.svg" alt="User"></a>
-                    <a href="#" aria-label="Ajuda"><img src="/images/icons/help.svg" alt="Help"></a>
-                    <a href="#" aria-label="Carrinho"><img src="/images/icons/bag.svg" alt="Cart"></a>
-                </div>
-            </div>
-        </div>
-    </header>
+			<nav class="nav-container">
+				<nav class="nav-center" aria-label="Categorias Principais">
+					<ul>
+						<li><a href="#">Masculino</a></li>
+						<li><a href="#">Feminino</a></li>
+						<li><a href="#">Outlet</a></li>
+					</ul>
+				</nav>
+
+				<nav class="nav-right" aria-label="Acesso rápido">
+					<ul>
+						<li><a href="#">Nossas lojas</a></li>
+						<li><a href="#">Sobre</a></li>
+						<li>
+							<a href="#" aria-label="Minha conta">
+								<img src="./images/icons/user.svg" alt="Minha conta" />
+							</a>
+						</li>
+						<li>
+							<a href="#" aria-label="Ajuda">
+								<img src="./images/icons/help.svg" alt="Ajuda" />
+							</a>
+						</li>
+						<li>
+							<a href="#" aria-label="Carrinho">
+								<img src="./images/icons/bag.svg" alt="Carrinho" />
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
 
     <main>
         <section class="hero">
             <div class="hero-bg">
-                <img src="/images/banners/banner-hero.jpg" alt="Modelo sentado na escada">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="/images/banners/banner-grid.jpg">
+                    <img src="/images/banners/banner-hero.jpg" alt="Modelo sentado na escada">
+                </picture>
             </div>
-            <div class="hero-content">
+            <div class="hero-principal">
                 <span class="hero-subtitle">Krypton One</span>
-                <h2>Transforme qualquer passo<br>em presença.</h2>
+                <h2>Transforme qualquer passo em presença.</h2>
                 <div class="hero-buttons">
                     <a href="#" class="btn btn-outline">Ver modelos</a>
                     <a href="#" class="btn btn-filled">Comprar</a>
@@ -58,24 +84,28 @@
             </div>
         </section>
 
-        <section class="product-grid categories-section">
-            <div class="grid-container">
+        <section class="categories-section">
+            <div class="carrosel-container"> 
                 <article class="category-card">
+                    <span class="overlay"></span>
                     <img src="/images/banners/casual.jpg" alt="Tênis Casual">
                     <a href="#" class="category-btn">Casual</a>
                 </article>
-                
+
                 <article class="category-card">
+                    <span class="overlay"></span>
                     <img src="/images/banners/esporte.jpg" alt="Tênis Esporte">
                     <a href="#" class="category-btn">Esporte</a>
                 </article>
 
                 <article class="category-card">
+                    <span class="overlay"></span>
                     <img src="/images/banners/moderno.jpg" alt="Tênis Moderno">
                     <a href="#" class="category-btn">Moderno</a>
                 </article>
 
                 <article class="category-card">
+                    <span class="overlay"></span>
                     <img src="/images/banners/futurista.jpg" alt="Tênis Futurista">
                     <a href="#" class="category-btn">Futurista</a>
                 </article>
@@ -84,7 +114,7 @@
 
         <section class="product-grid gallery-section">
             <div class="bento-grid">
-                
+
                 <article class="gallery-item hero-item secondary-hero">
                     <div class="hero-bg">
                         <img src="/images/banners/banner-grid.jpg" alt="Estilo Urbano">
@@ -98,12 +128,12 @@
                         </div>
                     </div>
                 </article>
-                
-                <article class="gallery-item item-wide">
+
+                <article class="gallery-item purple-one">
                     <img src="/images/banners/roxo-grid.jpg" alt="Tênis Colorido">
                 </article>
 
-                <article class="gallery-item">
+                <article class="gallery-item black-white">
                     <img src="/images/banners/branco-grid.jpg" alt="Tênis Preto">
                 </article>
 
@@ -111,12 +141,12 @@
                     <img src="/images/banners/modelo-grid.png" alt="Modelo Feminina">
                 </article>
 
-                    <article class="gallery-item">
-                        <img src="/images/banners/moderno-grod.png" alt="Tênis Esportivo">
-                    </article>
-                    <article class="gallery-item">
-                        <img src="/images/banners/futurista-grid.png" alt="Tênis Cinza">
-                    </article>
+                <article class="gallery-item">
+                    <img src="/images/banners/moderno-grid.png" alt="Tênis Esportivo">
+                </article>
+                <article class="gallery-item">
+                    <img src="/images/banners/futurista-grid.png" alt="Tênis Cinza">
+                </article>
             </div>
         </section>
 
@@ -135,7 +165,7 @@
 
     <footer class="footer">
         <div class="container footer-grid">
-            
+
             <div class="footer-social">
                 <h3>Redes sociais</h3>
                 <div class="social-icons">
@@ -182,7 +212,7 @@
                         <li><a href="#">Loja online</a></li>
                     </ul>
                 </div>
-                 
+
                 <div class="link-column">
                     <h4>Sobre</h4>
                     <ul>
@@ -199,4 +229,5 @@
     </footer>
 
 </body>
+
 </html>

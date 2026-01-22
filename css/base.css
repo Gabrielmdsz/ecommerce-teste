@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #7b2cbf; 
+    --primary-color: #7c3aed; 
     --accent-color: #b8b8ff;  
     --text-dark: #1a1a1a;
     --text-light: #f5f5f5;
@@ -35,7 +35,6 @@ body {
 
 
 img {
-    max-width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
